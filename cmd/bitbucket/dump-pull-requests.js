@@ -1,6 +1,6 @@
 (function () {
-  "use strict";
-}());
+  "use strict"
+}())
 
 const rp = require("request-promise-native")
 
