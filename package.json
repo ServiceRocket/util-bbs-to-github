@@ -1,0 +1,13 @@
+{
+  "name": "util-bitbucket-to-github",
+  "version": "0.0.1",
+  "description": "Utilities to migrate Bitbucket to Github.",
+  "main": "index.js",
+  "dependencies": {
+    "gh": "^1.13.5",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {}
+}
