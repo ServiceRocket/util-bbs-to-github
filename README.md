@@ -9,5 +9,5 @@ Only the dump feature is available for now:
 ```bash
 $ npm install
 $ BITBUCKET_USERNAME=foo BITBUCKET_PASSWORD=bar BITBUCKET_URL=https://host \
-  node bb2gh.js bb dump-pull-request REPO/project 1
+  npm run --silent bb -- dump-pull-request HIRE/quiz-mmoradian 1
 ```
