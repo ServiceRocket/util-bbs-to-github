@@ -11,3 +11,4 @@ $ npm install
 $ BITBUCKET_USERNAME=foo BITBUCKET_PASSWORD=bar BITBUCKET_URL=https://host \
   npm run --silent bb -- dump-pull-request HIRE/quiz-mmoradian 1
 ```
+W

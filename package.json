@@ -1,12 +1,13 @@
 {
   "name": "util-bitbucket-to-github",
   "version": "0.0.1",
-  "description": "Utilities to migrate Bitbucket to Github.",
+  "description": "Utilities to migrate/copy from Bitbucket to Github.",
   "main": "index.js",
   "scripts": {
     "bb": "npm run bitbucket",
     "bitbucket": "babel-node bb2gh.js bb",
-    "gh": "babel-node bb2gh.js gh"
+    "gh": "babel-node bb2gh.js gh",
+    "test": "tape -r @babel/register test/**/*.js"
   },
   "dependencies": {
     "gh": "^1.13.5",
@@ -16,12 +17,16 @@
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",
-    "@babel/preset-env": "^7.2.0",
     "@babel/plugin-proposal-class-properties": "^7.2.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "chai": "^4.2.0",
-    "mocha": "^5.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.2.0",
+    "faker": "^4.1.0",
     "sinon": "^7.2.0",
-    "tape": "^4.9.1"
+    "tape": "^4.9.1",
+    "tape-promise": "^4.0.0",
+    "validator": "^10.9.0"
   }
 }

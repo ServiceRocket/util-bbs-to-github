@@ -15,7 +15,7 @@ exports.builder = (yargs) => {
     })
     .demandOption(["url", "username", "password"])
 }
-exports.handler = (argv) => {
+exports.handler = async (argv) => {
 
   let bb = new BitbucketHelper(
     argv.url, 
@@ -24,5 +24,5 @@ exports.handler = (argv) => {
       password: argv.password
   })
 
-  bb.getPullRequest(argv.repository, argv.pullRequest)
+  console.log(await bb.getPullRequest(argv.repository, argv.pullRequest))
 }
